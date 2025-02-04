@@ -1,0 +1,72 @@
+/* Ajustes generales */
+html,
+body {
+    height: 100%;
+    /* Asegura que el contenido ocupe toda la ventana */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    /* Apila los elementos en columna */
+}
+
+body {
+    background-color: #121212;
+    /* Fondo oscuro */
+    color: #d1d1d1;
+    /* Texto gris claro */
+}
+
+main {
+    flex: 1;
+    /* Ocupa el espacio disponible entre el header y el footer */
+}
+
+footer {
+    background-color: #00c853;
+    /* Fondo verde */
+    color: #121212;
+    /* Texto oscuro */
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    /* Mantiene el flujo natural */
+    bottom: 0;
+    width: 100%;
+}
+
+.card {
+    background-color: #1f1f1f;
+    /* Fondo gris oscuro */
+    color: #d1d1d1;
+    /* Texto gris claro */
+    border: none;
+    /* Sin bordes */
+}
+
+.btn-primary {
+    background-color: #00c853;
+    /* Verde intenso */
+    border-color: #00c853;
+}
+
+.btn-primary:hover {
+    background-color: #00a73d;
+    /* Verde oscuro */
+}
+
+.list-group-item {
+    background-color: #1f1f1f;
+    /* Fondo gris oscuro */
+    color: #d1d1d1;
+    /* Texto gris claro */
+    border: none;
+    /* Sin bordes */
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: #00c853;
+    /* Títulos en verde */
+}

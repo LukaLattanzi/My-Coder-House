@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Presupuesto Mensual</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Enlace al archivo CSS -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Encabezado -->
+    <header class="py-3 text-center">
+        <h1>Simulador de Presupuesto Mensual</h1>
+        <p>Calcula tus gastos y ahorros fácilmente</p>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="container my-4">
+        <!-- Tarjeta descriptiva -->
+        <div class="card shadow-sm mb-4">
+            <div class="card-body">
+                <h2 class="card-title text-center mb-4">Descripción del Simulador</h2>
+                <p>
+                    Este simulador permite ingresar tus ingresos mensuales y los gastos de diferentes categorías, como
+                    <strong>alquiler</strong>, <strong>comida</strong>, <strong>transporte</strong> y otros.
+                    Calcula el total de tus gastos, tu ahorro posible y te muestra si tu presupuesto está balanceado.
+                </p>
+            </div>
+        </div>
+
+        <!-- Resultados dinámicos -->
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h3 class="card-title text-center mb-4">Resultados del Simulador</h3>
+                <ul id="resultadosLista" class="list-group"></ul>
+                <div id="resumen" class="mt-4" style="display: none;">
+                    <h4>Resumen</h4>
+                    <p><strong>Total de Gastos:</strong> $<span id="totalGastos"></span></p>
+                    <p><strong>Ahorro Posible:</strong> $<span id="ahorro"></span></p>
+                    <p id="mensaje"></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botón para iniciar -->
+        <div class="text-center mt-4">
+            <button id="iniciarSimulador" class="btn btn-primary">Iniciar Simulador</button>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <small>Simulador desarrollado para la Entrega 1 | Taller de JS</small>
+    </footer>
+
+    <!-- Referencia al archivo JS -->
+    <script src="simulador.js"></script>
+</body>
+
+</html>
